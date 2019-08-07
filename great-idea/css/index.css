@@ -190,8 +190,13 @@ header {
 header section {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.logo {
+	width: 100%;
 }
 
 .header-section-1 {
@@ -201,6 +206,11 @@ header section {
 .header-section-1 ul {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
+}
+
+.header-section-1 ul li {
+	margin-bottom: 10px;
 }
 
 .header-section-1 nav a {
@@ -325,7 +335,12 @@ address p {
 .sub-section {
 	padding: 40px 0;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0 -20px;
+}
+
+.sub-section>* {
+	width: 50%;
 }
 
 .sub-section>div {
@@ -344,6 +359,22 @@ address p {
 	content: '▀';
 	font-size: 10px;
 	margin-right: 10px;
+}
+
+.services-info-img {
+	width: 100%;
+}
+
+
+/* media query for mobile */
+@media (max-width: 480px) {
+	.services-list>* {
+		width: 100%;
+	}
+
+	.sub-section>* {
+		width: 100%;
+	}
 }
 
 /* products */
